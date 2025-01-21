@@ -103,6 +103,13 @@ public class test {
        System.out.println( isApple);
        
        
+       int time=2;
+       
+       int days=720;
+       
+       System.out.println(days * 365 * 20 * 2);
+       System.out.println(days * 365 * 20 * 2 / 60);
+       System.out.println(days * 365 * 20 * 2 / 60 / 24);
        
        
        
