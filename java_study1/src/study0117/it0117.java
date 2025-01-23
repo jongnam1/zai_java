@@ -32,7 +32,7 @@ public class it0117 {
          int num= input.netxInt();
          
          
-         
+         int ab=7;
          
          
          
