@@ -85,6 +85,7 @@ public class study0203a {
 			System.out.println("F 학점");
 		
 		
+			
 		}
 	}
 }
