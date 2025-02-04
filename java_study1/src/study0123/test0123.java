@@ -43,7 +43,7 @@ public class test0123 {
 //        System.out.print("숫자2 : ");
 //        num2 = scan.nextInt();
 //        
-//        String 결과 = (num1 == num2 ) ?  "두숫자가 같다." : "두숫자가 같지안다.";
+//        String 결과 = (num1 == num2 ) ?  "두숫자가 같다." : "두숫자가 같지않다.";
 //        System.out.println( 결과 );
         
 //        System.out.println("정수 입력 : ");
