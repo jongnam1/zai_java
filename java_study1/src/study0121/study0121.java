@@ -60,6 +60,6 @@ public class study0121 {
     %c - 문자
     %s - 문자열
     %b - boolean 타입 
-    
+    \n - 줄바꿈
     
 */
