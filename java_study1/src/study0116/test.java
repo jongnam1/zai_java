@@ -112,8 +112,7 @@ public class test {
        System.out.println(days * 365 * 20 * 2 / 60 / 24);
        
        
-       
-       
+      
        
        
        

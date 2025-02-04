@@ -60,7 +60,9 @@ public class study0124a {
 					System.out.println("탑승가능");
 				}
 			
-
+				}
 	}
-
 }
+	
+
+

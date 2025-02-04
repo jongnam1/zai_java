@@ -84,6 +84,7 @@ public class study0131 {
 //    	  System.out.println(" F학점이다. ");
 //      }
         
+     	
       
       // 1입력하면 데이터 저장 이라고 출력
       // 2입력하면 데이터 삭제 하고 출력

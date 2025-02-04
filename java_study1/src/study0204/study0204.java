@@ -17,13 +17,13 @@ public class study0204 {
 		int com =0; int human=0;
 		
 								
-		if(com == human) {
+		if(user == game) {
 			System.out.println( "무승부입니다");
 			
-		}else if (com != human && com > human ) {
+		}else if (user != game && user > game ) {
 			System.out.println( "졌습니다.");
 			
-		}else if( com != human && com < human) {
+		}else if( user != game && user < game) {
 			System.out.println( "이겼습니다.");
 		}
 		
