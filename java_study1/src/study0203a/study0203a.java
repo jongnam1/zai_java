@@ -83,7 +83,7 @@ public class study0203a {
 		    break;
 		default:
 			System.out.println("F 학점");
-		
+		 
 		
 			
 		}

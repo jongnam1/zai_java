@@ -62,4 +62,8 @@ public class study0121 {
     %b - boolean 타입 
     \n - 줄바꿈
     
+<<<<<<< HEAD
 */
+=======
+*/
+>>>>>>> branch 'main' of https://github.com/jongnam1/zai_java.git
