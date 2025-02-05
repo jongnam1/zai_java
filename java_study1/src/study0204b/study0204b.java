@@ -81,10 +81,7 @@ public class study0204b {
 		 int ty = 0;
 		int gugu = ac.nextInt();
 		
-		
-		
-		
-		
+						
 		for( int i=1; i<=9; i++) {
 			System.out.printf("%d * %d = %d \n",gugu,i, gugu*i);
 		}
