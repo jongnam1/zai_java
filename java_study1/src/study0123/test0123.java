@@ -14,7 +14,7 @@ public class test0123 {
 		
 		
 //		String result = ( 1 > 5 ) ? "5보다 크다" : "5보다 작다";
-//        System.out.println( result);
+//              System.out.println( result);
 //        
 //        
 //        int age = 21;
