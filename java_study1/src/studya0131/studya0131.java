@@ -39,7 +39,7 @@ public class studya0131 {
             
 	     	
 	       int basic_time = 120;
-           int basic_cost = 1700;
+               int basic_cost = 1700;
 	       
            
 	       int high_time = 240;
