@@ -27,7 +27,7 @@ public class study0204a {
 		}
 		    	 
 //		if( me == com ) { // 서로 같은 값이면 비김
-//			System.out.println( "비금");
+//			System.out.println( "비김");
 //		}else if( (me ==1 && com ==3) || (me==2 && com ==1) || (me==3 && com==2)) {
 //			System.out.println("이김");
 //		}else {
