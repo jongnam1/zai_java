@@ -38,17 +38,11 @@ public class study0207a {
 		         입력한 알파벳이 몇번째 알파벳인지 찾기 - 반드시 for문으로
 		          
 		 */
-		Scanner tr = new Scanner(System.in);
-		int er = tr.nextInt();
-		  
-		int al=26; int ph=1;
-		for( ; ; ) {
-			System.out.println( "알파벳찾기 :");
-			int find= (int)(Math.random()*26+1);
+		
 		
 	}
 	}
-}
+//}
 //		for ( int a= 1; a<=9; a++) {
 //			for( int b= 1; b<=9; b++ ) {
 //				for( int c=1; c<=9; c++) {
