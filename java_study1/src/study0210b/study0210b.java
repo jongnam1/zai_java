@@ -139,8 +139,8 @@ public class study0210b {
         		  
            System.out.println( name1.compareTo(name2) ); // 서로 같은 문자나오면 0이라고 나옴, 한자라도 다르면 양수,음수가 나옴
            //compareTo : 0 이라면 두 문자열 동일
-           //      양수 : 사전적 순서가 앞일 경우 c name1     a name2
-           //      음수 : 사전적 순서가 뒤인 경우 a name1     c name2
+           //      양수 : 사전적 순서가 앞일 경우 c name1     a name2  오름차순으로 정렬됨
+           //      음수 : 사전적 순서가 뒤인 경우 a name1     c name2  
            
            
            int[] num = new int[] {10,20,30,40,50,60,70,80,90,100};
