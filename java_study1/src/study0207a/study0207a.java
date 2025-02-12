@@ -39,9 +39,9 @@ public class study0207a {
 		          
 		 */
 		
-		
-	}
-	}
+	
+	
+	
 //}
 //		for ( int a= 1; a<=9; a++) {
 //			for( int b= 1; b<=9; b++ ) {
@@ -69,15 +69,15 @@ public class study0207a {
 		
 		
 		
-//		for (int i = 0; i<=2; i++ ) {
-//			for (int k =i *4; k <=(i*4)+3;  k++) {
-//				System.out.print( k +  " ");		
-//								
-//				}System.out.println( );	
-//			}
+		for (int i = 0; i<=2; i++ ) {
+			for (int k =i *4; k <=(i*4)+3;  k++) {
+				System.out.print( k +  " ");		
+								
+				}System.out.println( );	
+			}
 //		
-//		}
-//	}
+		}
+	}
 //	}
 //}	
 //}	
