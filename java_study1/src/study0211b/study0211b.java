@@ -23,35 +23,34 @@ public class study0211b {
 //		System.out.println( Arrays.toString(game) );
 		
 		
-	
+		
 		// 5줄 5칸 출력
-		while(true) {
+		while(true) {  
 			
 		
 		for (int i =0; i<=4; i++) { //빙고판 출력
 			for(int k=0; k<=4; k++) {
-				if(game[i*5+k]==0 )
+				if(game[i*5+k]==0 && !(game != cyber))
 					System.out.printf(" %3s ", "■");
 				else
 				System.out.printf(" %3d ", game[i*5+k]);
-			}
+			} 
 			System.out.println();
-		}
+		} 
 		for( int a=0; a<=4; a++) {
 			for(int b=0; b<=4; b++) {
-				if(cyber[a*5+b]==0)
+				if(cyber[a*5+b]==0 && !(game != cyber))
 					System.out.printf("%3s", "★");
 				else
 					System.out.printf("%3d",cyber[a*5+b] );
 			}System.out.println();
 		}
-		System.out.print("컴터 입력: ");
-		int cum = scan.nextInt();
+		      
 		
-		for(int q=0; q<cyber.length; q++) {
-			if(com[a]== cum) {
-				cyber[a]=0;
-			}
+		
+			}for(int q=0; q<cyber.length; q++) {
+				if(game[q] ==   ) {
+					cyber[q]=0;
 		}
 	
 		System.out.print("숫자 입력: ");
@@ -62,11 +61,18 @@ public class study0211b {
 				game[i]=0; 
 				
 			}
-			
+		}
+			}
+	}
+}
+
+
+
 	   
-	   }
 	//int[][] a = new int [3][4]; // 2차원배열 [][]2개 
 		
-		}
-		}
-}
+	
+	
+
+
+
