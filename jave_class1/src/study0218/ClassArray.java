@@ -34,13 +34,13 @@ public class ClassArray {
 //	}
 //	     int [] a =new int [] {1,2,3,4,5};	
 	    
-//		Movie movie = new Movie();
-//		movie.title ="베테랑2";
-//		movie.genre="액션";
-//		movie.cnt = 4000;
-//		movie.year = 2024;
-//		
-//		System.out.println("제목 :"+movie.title + "장르 :"+movie.genre + "관객수 :" +movie.cnt+"개봉년도 :"+movie.year);
+		Movie movie = new Movie();
+		movie.title ="베테랑2";
+		movie.genre="액션";
+		movie.cnt = 4000;
+		movie.year = 2024;
+		
+		System.out.println("제목 :"+movie.title + "장르 :"+movie.genre + "관객수 :" +movie.cnt+"개봉년도 :"+movie.year);
 //		
 //		
 //		Member info = new Member(); // new member(); <- 생성자메서드 호출하는것
@@ -50,9 +50,9 @@ public class ClassArray {
 //		Member m1 = new Member();
 //		System.out.println( m1.name);
 		
-		Member info = new Member(20,"군인","김유신");
+//		Member info = new Member(20,"군인","김유신");
 		
-		System.out.println(info.job);
+//		System.out.println(info.job);
 
 		
 /* 영화제목, 장르 관객수, 개봉년도
