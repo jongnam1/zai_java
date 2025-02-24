@@ -25,7 +25,8 @@ public class JavaMethod {
 	}
 	 
 	
-	static void sum(int num1, float num2) {  // 메소드이름 sum 은 똑같지만, 매개변수가 다르면 오버로딩
+	static void sum(int num1, float num2) {  // 메소드이름 sum 은 똑같지만, 매개변수가 다르면 오버로딩,
+		// 앞의 반환타입은 상관 없음
 		System.out.println("합 :"+(num1+num2));
 	}
 	

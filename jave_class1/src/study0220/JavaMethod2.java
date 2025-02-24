@@ -12,7 +12,7 @@ public class JavaMethod2 {
 		//user1.output();
 		
 		
-		Member user3= new Member("golda", "54327",10027);	
+		Member user3= new Member("golda", "54327",1074);	
 		System.out.println(user3);
 		user3.output();
 		
