@@ -2,6 +2,9 @@ package study0224;
 
 public class JavaDefault1 {
 
+	static void sum() { //static 붙어 있는게 먼저 만들어짐
+		
+	}
 	public static void main(String[] args) {
 		
 		Member m1 = new Member(); //객체생성, 인스턴스생성
