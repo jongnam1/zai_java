@@ -9,3 +9,4 @@ public class Game {
          this.title=title;
          this.cnt=cnt;
 }
+}
