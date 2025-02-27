@@ -32,6 +32,8 @@ public class Buyer {
 	public String toString() {
 		return ("보유머니"+ money + "원" );
 	}
+	////////////////////////////////////////////////////////
+	02.27
 	public Date getBuyDate() {
 		return buyDate;
 	}
