@@ -1,10 +1,13 @@
 package Customer;
 
+import java.util.Date;
+
 import Store.Fruit;
 
 public class Buyer {
     private int money;   //<-private은 외부에서 사용불가
     private Fruit item;
+    private Date buyDate;
     
     public Buyer (int money) { // Buyer객체생성시 동작 할 생성자메서드
     	this.money = money;
@@ -28,6 +31,12 @@ public class Buyer {
 	@Override 
 	public String toString() {
 		return ("보유머니"+ money + "원" );
+	}
+	public Date getBuyDate() {
+		return buyDate;
+	}
+	public void setBuyDate(Date buyDate) {
+		this.buyDate = buyDate;
 	}
    
     
