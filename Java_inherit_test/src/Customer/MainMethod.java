@@ -1,6 +1,8 @@
 package Customer;
 
 import java.sql.*;  //<- *은 All을 의미함, 하위 모두 포함함
+import java.util.Scanner;
+import java.util.Date;
 
 import Store.*;  //<- 다른패키지에 있으면 import해야됨
 
@@ -24,7 +26,10 @@ public class MainMethod{
 		
 		
 		// 다형성 - 하나의 타입으로 여러 타입을 다룰수 있다. <- 객체지향의 꽃이라고도 함
-		//   상속 관계, Implements
+		// 상속 관계, Implements
+		
+		
+		
 		
 //		Fruit f = new Banana(2500, 500);
 //		f.makeJuice();
@@ -50,7 +55,7 @@ public class MainMethod{
     2. 계정 로그인
     3. 쿼리문 작성하여 주고 받고 하기
     
-     //데이터베이스 연결하기 (드라이버 로드)
+     //데이터베이스 연결하기 (드라이버 로드)  <mysql사이트에서 MySQL Connector/J (Archived Versions) 다운
      //com.mysql.cj.jdbc.Driver
     // 쿼리문 작성하여 보내고 받기
     // select * from store_menu1;  
@@ -63,7 +68,7 @@ public class MainMethod{
 		  
 	  String sql = "select * from store_menu1"; // 조회 쿼리문
 	  // 작성한 쿼리문을 데이터베이스에 보내려면 
-	  // Statement , PreparedStatement <-보완적으로 preparedstatement 쓰는게 좋다 
+	  // Statement , PreparedStatement <-보완적으로 preparedStatement 쓰는게 좋다 (병렬)
 	  
 	  Statement st = null;  // 쿼리문 보낼때 필요
 	  ResultSet rs = null;  // 조회결과 받을때 필요
@@ -112,29 +117,42 @@ public class MainMethod{
 			  if( type.equals("Grape"))
 				  menu[i] = new Grape(cost,cap);
 		  }
-		
-		  
-		  
-		
+
 		
 	} catch (SQLException e) {
 		System.out.println("쿼리문 조회 실패");
 		
 		e.printStackTrace();
 	}
-	  
-	  
+	    
 	  Buyer ctm1 = new Buyer(10000); // 구매자
 		
-		
-		for( Fruit m : menu) {
-			System.out.println(m);
+		for( int i =0; i<menu.length; i++) {
+			System.out.println( (i+1)+". "+menu[i]);
 			// 출력 결과 -> 바나나 2500원 350ml
 		}
+		// 어떤 주스를 사먹을꺼냐!!
+		Scanner sc = new Scanner(System.in);
+		System.out.print("구매 번호 :");
+		int num = sc.nextInt();
+		
+		// 결제 진행하고 언제 주스를 사먹었는지 어떤 주스인지 기록
+		ctm1.setMoney( ctm1.getMoney() - menu[num-1].getCost() );
+		// 내가 만약 5번을 선택했다면 num-1은 4니까
+		// menu배열의 4번 인덱스의 객체를 선택한것이고
+		// 해당객체의 getCost니까 cost 변수의 값 가지고 온다.
+		// ctm1.getMoney는 get으로 시작하는 메서드 변수의값 출력이니까
+		// 10000을 가지고온다.
+		// 그러니까 10000 -3500 된다. 이것의 결과 6500을 setMoney를 통해
+		// money변수에 저장하게 되니 money변수는 6500을 가진다.
+		
+		// import java.util.Date 
+		ctm1.setBuyDate(new Date()); // 내가 구매한 날짜
+		ctm1.setItem(menu[num-1]); // 내가 선택한 음료
+		
 		System.out.println(ctm1);
 		
-	
-		
+
 	}
 
 }
