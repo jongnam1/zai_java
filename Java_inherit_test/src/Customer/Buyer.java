@@ -4,7 +4,7 @@ import java.util.Date;
 
 import Store.Fruit;
 
-public class Buyer {
+public class Buyer { // public final class xxx 하면 이거는 부모클래스로 사용하지 마라는 의미, 변경이 안됨
     private int money;   //<-private은 외부에서 사용불가
     private Fruit item;   //<- private로 만든것을 사용하기위해 set, get 메소드사용함
     private Date buyDate;
