@@ -32,6 +32,8 @@ public class Buyer { // public final class xxx 하면 이거는 부모클래스�
 	public String toString() {
 		return "보유머니"+ money + "원" + "구매일 :" +this.buyDate +"구매음료 :"+this.item;
 	}
+	////////////////////////////////////////////////////////
+	02.27
 	public Date getBuyDate() {
 		return buyDate;
 	}
