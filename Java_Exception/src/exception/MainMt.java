@@ -19,7 +19,7 @@ public class MainMt {
 		// try catch가 예외처리 구문, 없으면 프로그램 종료
 		try { // 오류가 예상되는 코드를 try{ } 에 작성한다. 
 			System.out.print("a 변수 입력 :");
-			a= sc.nextInt();
+			a= sc.nextInt(); 
 			
 			System.out.println("나누기전");
 		    System.out.println( a/2);
@@ -27,6 +27,7 @@ public class MainMt {
 		    
 		}catch(ArithmeticException e) { //발생한 문제만 catch가 동작함, 오류가 없으면 catch 실행안됨
 			System.out.println( "0으로 나누기 하면 안되");
+			
 		}catch(Exception i) {
 			System.out.println("정수 입력 해야되!");
 		}
