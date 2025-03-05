@@ -46,9 +46,12 @@ public class study0121 {
 		System.out.println(num);
 		System.out.printf("%-4d\n", num);
 		
-		
-		
+	
 	}
+}
+
+		
+
 
 }
 
@@ -66,4 +69,4 @@ public class study0121 {
 */
 =======
 */
->>>>>>> branch 'main' of https://github.com/jongnam1/zai_java.git
+//>>>>>>> branch 'main' of https://github.com/jongnam1/zai_java.git

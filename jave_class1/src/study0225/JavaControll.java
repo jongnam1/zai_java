@@ -19,7 +19,7 @@ public class JavaControll {
 		final int year = 2025;  //제어자는 타입앞에 적는다, year변수의 값 변경불가
         int aYear = 2025;
 		
-		Game g = new game();
+//		Game g = new game();
 		
 		Movie m =new Movie();
 	// private 제어자 붙은 변수에 데이터저장은

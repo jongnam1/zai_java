@@ -46,12 +46,6 @@ public class study0211b {
 			}System.out.println();
 		}
 		      
-		
-		
-			}for(int q=0; q<cyber.length; q++) {
-				if(game[q] ==   ) {
-					cyber[q]=0;
-		}
 	
 		System.out.print("숫자 입력: ");
 		int num = scan.nextInt();

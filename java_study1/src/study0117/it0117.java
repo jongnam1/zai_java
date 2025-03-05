@@ -25,11 +25,11 @@ public class it0117 {
          // 2. 입력 객체를 통해 데이터에 맞는 입력 메서드 호출
          
          // Scanner 변수이름 = new Scanner(System.in);
-         Scanner input = new Scanner(System.in);
+//         Scanner input = new Scanner(System.in);
          
          // num 이라는 변수에 정수 데이터입력하여 저장하기
          // nextInt() 가 정수 데이터 입력하기 위한 메서드이다.
-         int num= input.netxInt();
+//         int num= input.netxInt();
          
          
          int ab=7;

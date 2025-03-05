@@ -16,7 +16,7 @@ public class Test {
 	static void origin() {// 클래스 메서드
 //		a.view(); 오류
 //		A bb = new A(); //오류
-		setNum(10); // 클래스 메서드 안에서 인스턴스메서드 사용불가
+//		setNum(10); // 클래스 메서드 안에서 인스턴스메서드 사용불가
 	}
 	// 정적 내부 클래스(static)
 	static class Dog{
