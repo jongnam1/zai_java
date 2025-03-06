@@ -15,9 +15,13 @@ public class MainMt {
 //		  
 //         System.out.println( list );
 		
+		MemberDao dao = new MemberDao();
 		
+		ArrayList<Member> memberList = dao.select();
 		
-		
+		for( Member m : memberList) {
+			System.out.println(m);
+		}
 		
 	}
 
