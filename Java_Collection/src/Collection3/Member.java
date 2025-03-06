@@ -3,16 +3,15 @@ package Collection3;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
 @Getter
 @Setter
 @ToString
-@NoArgsConstructor
-@RequiredArgsConstructor
-@AllArgsConstructor
+@NoArgsConstructor  // 기본 생성자 메서드
+@AllArgsConstructor  // 모든 인스턴스를 매개변수로 메서드
+
 
 public class Member {
 	private Long id; // 회원번호
@@ -27,10 +26,8 @@ public class Member {
 //		this.password=password;
 //		this.memberId=memberId;
 //		this.email=email;
-//		this.birth=birth;
-		
-		
-	}
+//		this.birth=birth;				
+//	}
 	
 }
 
