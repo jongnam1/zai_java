@@ -36,9 +36,29 @@ public class MainMt {
 		
 		System.out.println(list.indexOf("포카리") ); // 배열에 특정데이터 어디?
 		
-		list.remove(1); // 인덱스를 지정하여 해당 데이터 삭제
+		list.remove(1); // 인덱스를 지정하여 해당 데이터 삭제 .remove 오버로딩 되어있는것
 		list.remove("포카리"); //삭제 할 데이터 입력하여 삭제
 		System.out.println( list ); //<-참조변수 넣는것
+		
+		
+		for(int i=0; i<list.size(); i++) {
+			System.out.println( list.get( i ));
+		}
+		for( Object o : list/*제네릭 지정한타입*/ ) {
+			System.out.println( o );
+		}
+		
+		list.add/*오버로딩된것*/(2/*인덱스*/, "내가원하는곳"); 
+		
+		System.out.println( list );
+		
+		System.out.println(list.contains("장미란"));
+		
+		list.clear();
+		
+		System.out.println(list); // 배열모두 삭제
+		
+		// int[] a = new int [3];
 		
 	}
 
@@ -49,7 +69,6 @@ public class MainMt {
 
 
 /*
-  
   
   자바 컬렉션 프레임워크
   자료구조와 알고리즘을 클래스화 시켜놓은것

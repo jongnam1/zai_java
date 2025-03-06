@@ -59,10 +59,7 @@ public class Javamain {
 		}
 		
 		
-    	  }
-			
-	
-		
+    	  }	
 	
 
 class Animal{ // 동물 정보 저장 클래스
@@ -70,7 +67,6 @@ class Animal{ // 동물 정보 저장 클래스
 	String name;  //동물 이름
 	int age; //동물 나이
 }
-
 
 
 class Member{ //클래스 정의 - 클래스안의 내용으로 데이터 저장될수 있게

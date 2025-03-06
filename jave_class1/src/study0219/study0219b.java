@@ -6,7 +6,7 @@ public class study0219b {
 		
          Food f1 =new Food("돈가스", 8000);
          
-         System.out.println(f1.foodNmae);
+         System.out.println(f1.foodName);
          
          Food f2 = new Food();
          
