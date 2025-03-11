@@ -12,11 +12,14 @@ public class SchoolService implements ActiveService{
 	
 	public SchoolService() { dao = new SchoolDAO(); }
 
-	public void searchSchool() {
+	public void searchSchool(String id) {
 		System.out.println("\n----- 나의 학교 찾기 -----\n");
 		
 		int schoolNum = search(); // 검색
+		dao.saveData( id, schoolNum ); // 등록 ( 데이터베이스 - 테이블에 저장)
 	}
+	
+	
 	
 	private int search() {
 		Scanner scan = new Scanner(System.in);

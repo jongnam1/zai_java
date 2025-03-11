@@ -37,4 +37,27 @@ public class SchoolDAO extends DBconnect{
 		return list;
 	}
 
+	public void saveData(String id, int schoolNum) {
+		
+		String sql = "insert into my_school(member_id, school_id)values('"+id + "' ,"+schoolNum + ")";
+				
+				try {
+					st = conn.createStatement();
+					st.executeUpdate(sql); // insert,update,delete는 update하는것
+					
+				}catch(SQLException e) {
+					System.out.println( "학교 추가 및 실패");
+					e.printStackTrace();
+				}
+		 
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
 }

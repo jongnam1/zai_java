@@ -19,7 +19,7 @@ public class Mymain {
     	return num;
     }
     
-    public static int subMenu(SchoolService schoolService) {
+    public static int subMenu(SchoolService schoolService, String id) {
     
     	System.out.println("\n ===== 아이러브스쿨======\n");
     	System.out.println("1. 학교찾기");
@@ -30,7 +30,7 @@ public class Mymain {
     	int num = sc.nextInt();
     	
     	if(num == 1) {
-    		schoolService.searchSchool();
+    		schoolService.searchSchool(id);
     	}else if( num == 2) {
     		schoolService.myReunion();
     	}else if (num ==3) {
@@ -38,7 +38,7 @@ public class Mymain {
     	}else {
     		return 0;
     	}
-    	return subMenu(schoolService);
+    	return subMenu(schoolService, id);
     }
     
     
@@ -51,8 +51,10 @@ public class Mymain {
 		while(true) {
 			switch(menu()) {
 			case 1: //로그인
-				if (memberService.signIn()) {// 로그인 성공
-				     subMenu(schoolService);
+				String id =memberService.signIn();
+				
+				if ( id != null) {// 로그인 성공
+				     subMenu(schoolService, id);
 				     return;
 			    }else// 로그인 실패 
 					System.out.println("아이디 또는 비밀번호가 잘못되었습니다.");
