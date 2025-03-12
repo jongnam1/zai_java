@@ -38,6 +38,7 @@ public class Javamain {
 		Member my = new Member(); //인스턴스 생성( 객체 생성)
 		my.name="박문수";
 		my.age=25;
+	
 		
 		// 동물종류, 동물이름,나이
 		// 동물종류에는 개, 고양이, 닭, 토끼, 코끼리 등등

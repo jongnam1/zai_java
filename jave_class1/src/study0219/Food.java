@@ -9,6 +9,7 @@ public class Food {
      Food(String foodName, int cost){
     	 this.foodName = foodName;
     	 this.cost = cost;
+    	 
      }
      
 }

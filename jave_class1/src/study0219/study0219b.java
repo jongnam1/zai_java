@@ -15,6 +15,7 @@ public class study0219b {
          Item item2 = new Item("갤럭시북5",100);
          Item item3 = new Item ("그램", "LG전자",123);
          
+       
          //기본생성자 메서드가 존재하기에 Food()실행됨
 	
          /*

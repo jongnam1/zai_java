@@ -49,6 +49,8 @@ public class SchoolDAO extends DBconnect{
 					System.out.println( "학교 추가 및 실패");
 					e.printStackTrace();
 				}
+				
+				
 		 
 		
 		

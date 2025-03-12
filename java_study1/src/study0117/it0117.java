@@ -1,5 +1,7 @@
 package study0117;
 
+import java.util.Scanner;
+
 public class it0117 {
 
 	public static void main(String[] args) {
@@ -34,7 +36,7 @@ public class it0117 {
          
          int ab=7;
          
-         
+        
          
          
          
