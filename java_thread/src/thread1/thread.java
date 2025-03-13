@@ -32,27 +32,34 @@ public class thread {
 		    
 		};
 		
-		Create device1 = new Create();
-		device1.start();
+		Create [] device = new Create[알.length];
+		for(int i=0; i<알.length; i++)
+			device[i] = new Create();
+		
+		device[0].start(); device[1].start();
+		device[2].start(); device[3].start();
+		
+		// 알 갯수 만큼 스레드 만들었다. - 왜?? 알 최대치만큼 스레드있으면 좋을꺼 같다라는 개인적인 생각
 		// 부화 시킬 공룡을 선택하여 부화진행 할것이다.
 		// 스레드를 통해 입력 각 공룡별 시간만큼 동작하도록 할것이다.
 		Scanner sc =new Scanner(System.in);
 		
 		for(int i=0; i<알.length; i++) {
 			
-			System.out.print("1~4 중 하나: ");
+			System.out.print("1~4 중 알 하나 선택: ");
 			int select = sc.nextInt();
 			
+			
+			
 			Create.hatch(알[select -1] );
+			System.out.println( (i+1)+"번 부화장치 가동");
 			
-			
+			System.out.print("계속 해? (1-계속):");
+			if(sc.nextInt()==1)
+				break;
 		}
 		
-		
-		
-		
-		
-		
+
 	}
 
 }
