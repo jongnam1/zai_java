@@ -6,8 +6,11 @@
 <meta charset="UTF-8">
 <title>LOVE</title>
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"><%-- 그림 텍스트임 --%>
+
 <link rel="icon" href="./static/images/cats.ico"> <%-- 웹 앱기준 파일경로 --%> 
 <link rel="stylesheet" href="./static/css/default.css">
+<link rel="stylesheet" href="./static/css/main.css">
 </head>
 
 <body>
@@ -20,6 +23,15 @@
              <div class="slide-img">
                 <img src="https://picsum.photos/1000/400?random=1">
              </div>
+             <p class="arrow">
+                  <span class="arrow-left">
+                   <i class="bi bi-arrow-left-square"></i></span>            
+                  <span class="arrow-right"> <i class="bi bi-arrow-right-square"></i></span>
+                  
+                
+                 
+                
+             </p>
           </div>
           
           <div id="content-wrap">

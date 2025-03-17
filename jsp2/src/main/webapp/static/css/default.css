@@ -57,5 +57,28 @@ img{ width:100%; } /* 상위 태그 다 가져오겠다 */
 	color:#fff;
 	background:#555;
 }
+#nav .right .login-wrap{width:100%; }
+#nav .right .login-wrap .login-bt{
+	display:block;
+	padding: 15px 0;
+	background:pink;
+	text-align:center;
+	border-radius:10px;  /* 반지름값 주는것*/
+}
+
 
 /* foot 부분의 스타일 */
+#foot{
+	width:100%;
+	padding: 50px 80px;
+	border-top:3px solid #ccc;
+	margin-top:50px;
+}
+#foot .address b:nth-child(2){ /* 2번째 자식*/
+	margin: 0 20px;
+	
+}
+#foot .logo{
+	width:200px;
+}
+
