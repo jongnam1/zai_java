@@ -1,0 +1,61 @@
+@charset "UTF-8";
+/* default.css */
+
+
+*{
+   margin:0;
+   padding:0;
+   box-sizing: border-box;
+   	  
+}
+ul { list-stype-type:none; }
+a{text-decoration:none; color:inherit;} /* 밑에 있는 태그들 상속 */ 
+img{ width:100%; } /* 상위 태그 다 가져오겠다 */
+
+
+#wrap{
+	width:1000px;
+	margin:0 auto;
+	position:relative;
+}
+
+/* header 부분의 스타일  */
+#header{
+	width:100%;
+	padding:10px 0;
+	margin-button:100px;
+	
+}
+#nav{
+	width:100%;
+	display:flex;
+	align-items:center;
+}
+#nav .top{
+	display:flex;
+	align-items:center;
+}
+#nav .left{
+	width:80%;
+	justify-content:space-between 
+}
+#nav .right{
+	width:20%;
+	padding:30px;
+}
+
+#nav .left .menu-list{
+	width:100%; display:flex;
+	align-items:center;
+}
+#nav .left .menu-list .menu{
+	width:20%;
+	padding:15px 0;
+	
+}
+#nav .left .menu-list .menu:hover{
+	color:#fff;
+	background:#555;
+}
+
+/* foot 부분의 스타일 */
