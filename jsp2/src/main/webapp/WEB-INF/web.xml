@@ -17,6 +17,6 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>Main</servlet-name>
-    <url-pattern>/Main</url-pattern>
+    <url-pattern>/signin</url-pattern>
   </servlet-mapping>
 </web-app>

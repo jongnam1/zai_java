@@ -1,10 +1,13 @@
 package control;
 
+import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import service.MemberService;
+
 import java.io.IOException;
 
 /**
@@ -25,16 +28,29 @@ public class Main extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		
+//		response.sendRedirect("/jsp2/member/signIn.jsp"); // <-이 방식으로는 데이터 전달이 안됨
+		
+
+//		response.getWriter().append("<h1> i love pizza </h1>");
+		
+		RequestDispatcher rd = request.getRequestDispatcher("member/signIn.jsp"); 
+		rd.forward(request, response);
 	}
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		doGet(request, response);
+		// 로그인 처리와 메인페이지 제공
+		MemberService ms = new MemberService();
+		ms.login(request);
+		
+		
+		
+		
+		
+		response.sendRedirect("/jsp2"); // 메인페이지 - webapp밑에 있는 index.jsp	
 	}
 
 }
