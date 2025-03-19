@@ -34,8 +34,8 @@ public class Main extends HttpServlet {
 
 //		response.getWriter().append("<h1> i love pizza </h1>");
 		
-		RequestDispatcher rd = request.getRequestDispatcher("member/signIn.jsp"); 
-		rd.forward(request, response);
+		RequestDispatcher rd = request.getRequestDispatcher("member/signIn.jsp"); // forward 방식으로 하려면 requestDispatcher가 필요함
+		rd.forward(request, response);   //일반적인 페이지 제공하는방법은 forward , forward를 사용하면 주소는 그대로 인데 내용이 바뀌어서 보임
 	}
 
 	/**
@@ -47,7 +47,7 @@ public class Main extends HttpServlet {
 		ms.login(request);
 		
 		
-		
+		// 요청받아서 처리하는것이 서블렛
 		
 		
 		response.sendRedirect("/jsp2"); // 메인페이지 - webapp밑에 있는 index.jsp	
