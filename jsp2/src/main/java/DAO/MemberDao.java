@@ -2,6 +2,8 @@ package DAO;
 
 import java.sql.*;
 
+import DTO.Board;
+
 public class MemberDao {
 	
 	private Connection conn;
@@ -12,7 +14,7 @@ public class MemberDao {
 		connect();
 	}
 	
-	
+		
 	public boolean loginCheck(String email, String pw) {
 		String sql = "select * from test_member "+ "where email=? and password=?";
 		

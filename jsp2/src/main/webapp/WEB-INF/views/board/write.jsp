@@ -41,7 +41,7 @@
         width:25%;
         padding-right:10px;
     }
-    #writeWrap .input-field label{
+    #writeWrap .input-field input{
         width: 75%;
         border:0;
         border-bottom: 1px solid #aaa;
@@ -98,7 +98,7 @@
                       <textarea name="content" id="content"></textarea>                     
                     </div>
                     <div>
-                       <button class="wirte-bt">
+                       <button class="write-bt">
                           내마음속에 저장
                        </button>
                     </div>

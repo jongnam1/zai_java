@@ -7,6 +7,8 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import service.BoardService;
+
 import java.io.IOException;
 
 /**
@@ -62,6 +64,8 @@ public class BoardController extends HttpServlet {
 			view +="write.jsp";
 		}else if( cmd.equals("save")) { // 게시판저장 요청 - /jsp2/board/save
 			view =null;
+			BoardService bs= new BoardService();
+			bs.save(request);
 		}
 		
 		if(view !=null) {
