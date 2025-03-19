@@ -17,6 +17,7 @@ import java.io.IOException;
 public class BoardController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
+	private BoardService bs;
     /**
      * @see HttpServlet#HttpServlet()
      */
@@ -29,7 +30,7 @@ public class BoardController extends HttpServlet {
 	 * @see Servlet#init(ServletConfig)
 	 */
 	public void init(ServletConfig config) throws ServletException {
-		// TODO Auto-generated method stub
+		bs = new BoardService();
 	}
 
 	/**
@@ -58,13 +59,14 @@ public class BoardController extends HttpServlet {
 		    // cmd에 list가 있다면
 		if( cmd.equals("list")) { //게시판 목록 페이지 요청 -/jsp2/board/list
 			view += "list.jsp";
+			bs.allSelect(request);
 			
 		}else if(cmd.equals("write")) { // 게시판 작성페이지요청 - /jsp2/board/write
 			
 			view +="write.jsp";
 		}else if( cmd.equals("save")) { // 게시판저장 요청 - /jsp2/board/save
 			view =null;
-			BoardService bs= new BoardService();
+			
 			bs.save(request);
 		}
 		
